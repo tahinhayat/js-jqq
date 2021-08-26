@@ -1,0 +1,14 @@
+.bt{
+    padding: 8px 60px !important;
+    font-size: 20px;
+}
+.bt:focus{
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+.br{
+    padding: 20px 0 30px;
+    border: 2px solid red;
+}

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- title  -->
+    <title>js/jq</title>
+  </head>
+
+  <body>
+    <!-- heading -->
+    <div class="container py-3 mb-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-5  bg-light text-center">
+          <h1>Practice <span class="display-3 text-danger">JS</span> </h1>
+        </div>
+      </div>
+    </div>
+    <!-- by id name -->
+    <div class="container bg-light py-3">
+      <div class="row justify-content-center">
+        <h3 class="text-warning display-6 text-center"><b><u>Selector by id name</u></b></h3>
+        <div class="col-lg-7 text-center">
+          <h1 class="text-success">click the button to change the text</h1>
+          <button type="button" class="btn btn-danger bt" onclick="textChange1()">Click me</button>
+          <h2 id="h2">LOTR</h2>
+        </div>
+      </div>
+    </div>
+    <!-- by class name -->
+    <div class="container bg-light my-3 py-3"> 
+      <div class="row justify-content-center">
+        <h3 class="text-warning display-6 text-center"><b><u>Selector by class name</u></b></h3>
+        <div class="col-lg-7 text-center">
+          <h1 class="text-success">click the button to change the text</h1>
+          <button type="button" class="btn btn-warning bt" onclick="textChang2()">Click me</button>
+          <h1 class="h1">Ellon Musk</h1>
+          <h1 class="h1">Ellon Musk</h1>
+          <h1 class="h1">Ellon Musk</h1>
+        </div>
+      </div>
+    </div>
+    <!-- showing date -->
+    <div class="container bg-light my-3 py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center">
+          <h1 class="text-success"><u>click the button to see date</u></h1>
+          <button type="button" class="btn btn-danger bt" onclick="textChange3()">Click me</button>
+          <h1 id="d"></h1>
+        </div>
+      </div>
+    </div>   
+    <!-- repeat -->
+    <div class="container bg-light my-3 py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center">
+          <h1 class="text-success"><u>Repeat</u></h1>
+          <button type="button" class="btn  bt btn-info" onclick="textChange4()">Click me</button>
+          <h1 id="a">Bangladesh</h1>
+        </div>
+      </div>
+    </div>
+    <!-- changing css -->
+    <div class="container bg-light my-3 py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center">
+          <h1 class="text-success"><u>changing css</u></h1>
+          <button type="button" class="btn btn-warning bt" onclick="textChange5()">Click me</button>
+          <h1 id="b">The Cunning Fox...</h1>
+          <button type="button" class="btn btn-success bt" onclick="textChange6()">Click me</button>
+          <h1 id="c">Forest Gump</h1>
+          <button type="button" class="btn btn-danger bt mb-2" onclick="textChange7()">Click me</button>
+          <h1 id="e">The Shawshank redemption</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- changing img source -->
+    <div class="container bg-light my-3 py-3">
+      <div class="row d-flex justify-content-center">
+        <h3 class="text-warning display-6 text-center"><b><u>changing image source</u></b></h3>
+        <h1 class="text-success text-center mb-4">Click the buttons to change the image</h1>
+          <div class="col-lg-7 br text-center">
+            <button type="button" class="btn btn-danger bt mb-2" onclick="imageOne()">Image 1</button>
+            <img src="images/img1.png" class="img-fluid" id="im" alt="">
+          </div>
+          <div class="col-lg-6 py-3 text-center">
+            <button type="button" class="btn btn-success bt" onclick="imageTwo()">Image 2</button>
+            <button type="button" class="btn btn-warning bt" onclick="imageThree()">Image 3</button>
+          </div>
+      </div>
+    </div>
+
+    <!-- showing alert by id name -->
+    <div class="container bg-light my-3 py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 class="text-success text-center mb-4">JQ/Click the buttons to show alert!</h1>
+          <button type="button" id="alert" class="btn btn-danger bt">Attention!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- showing alert by class name -->
+    <div class="container bg-light my-3 py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 class="text-success text-center mb-4">JQ/Showing alert!<u></u></h1>
+          <button type="button" class="btn btn-secondary bt alert">See this!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- document.write -->
+    <div class="container bg-light my-3 py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 class="text-success text-center mb-4"><u>Document.write</u></h1>
+          <button type="button" class="btn btn-warning bt" onclick="document.write(5.0005444+0.43333333)" >see this</button>
+          <button type="button" class="btn btn-success bt" onclick="document.write(10000000+100000000)" >Try It!!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- window.alert -->
+    <div class="container bg-light my-3 py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <h1 class="text-success text-center mb-4"><u>window.alert</u></h1>
+          <button type="button" class="btn btn-danger bt" onclick="window.alert(44424646-333399)">See the result</button>
+          <h1 class="text-success text-center my-3"><u>Click the btn to print the current page</u></h1>
+          <button type="button" class="btn btn-secondary bt" onclick="window.print('');">print this page</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- others -->
+    <div class="container bg-light my-3 py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <h1 class="text-success text-center mb-4"><u>Othersss</u></h1>
+          <h2 id="add"> </h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- light on off -->
+    <div class="container bg-light my-3 py-3">
+      <div class="row d-flex justify-content-center">
+        <h1 class="text-success text-center mb-4"><u>Switch the buttons</u></h1>
+          <div class="col-lg-7 br text-center">
+            <img src="images/bulb1.jpg" class="img-fluid" id="blb" alt="">
+          </div>
+          <div class="col-lg-6 py-3 text-center">
+            <button type="button" class="btn btn-success bt" onclick="image4()">Switch On</button>
+            <button type="button" class="btn btn-warning bt" onclick="image5()">Switch Off</button>
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- js links -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+  
+  </body>
+</html>
